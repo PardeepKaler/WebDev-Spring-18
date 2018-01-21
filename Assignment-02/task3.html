@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Task 3</title>
+  <style>
+  h1{
+    text-align: center;
+  }
+  .div1 {
+    width : 33%;
+    float : left;
+  }
+
+  .div2 {
+    width: 67%;
+    float : right;
+  }
+  #bottleVerse, #thirdThing{
+    display: none;
+  }
+  .clearfix {
+    overflow: auto;
+  }
+  </style>
+</head>
+<body>
+  <div class="clearfix" >
+    <h1>"HW02 Task Three"</h1>
+    <div class="div1">
+      <ul style="list-style-type:none">
+        <li><a href="javascript:;" onclick="loremText()">Lorem Ipsem</a></li>
+        <li><a href="javascript:;" onclick="beerText()">99 Bottles</a></li>
+        <li><a href="javascript:;" onclick="lastThing()">Last Thing</a></li>
+      </ul>
+    </div>
+
+    <div class="div2">
+      <!-- Text Source is from Wikipedia -->
+      <p id="loremText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada ut felis blandit cursus. Nulla semper lectus id euismod mattis. Morbi sit amet diam euismod, commodo augue quis, facilisis quam. Duis molestie lectus id felis mollis, et porttitor ex iaculis. Nam sit amet convallis nulla, quis hendrerit leo. Sed tempus nibh pellentesque turpis auctor, in ultrices tellus rhoncus. Mauris faucibus ex lacus, id accumsan augue sagittis ut.
+        <br><br>
+        Proin nec sem mi. Nulla nec enim eget ligula mattis malesuada. Fusce fringilla ante non tellus convallis, in finibus felis pharetra. Fusce blandit porttitor odio, vitae mollis libero vehicula non. In scelerisque nec nisi in mattis. Sed id arcu nunc. Proin et quam nec nisi porttitor interdum. In congue nulla vel elementum pharetra. Sed maximus condimentum tellus sed lacinia. In justo nisl, venenatis id velit in, venenatis lacinia nisi. Nulla at lacinia arcu. Ut faucibus, tellus sit amet suscipit iaculis, sem eros hendrerit dui, et luctus quam magna et neque. Nullam finibus sagittis ante, et pellentesque eros mattis sit amet. Nulla facilisi. Aliquam in tincidunt nibh, tincidunt luctus purus.
+        <br><br>
+        Aliquam et ligula elit. Integer semper placerat quam, eu consequat dolor fermentum non. In neque urna, tempor non turpis eu, vestibulum pharetra nibh. Phasellus ultricies vel erat ac posuere. In sed vestibulum justo. Cras tortor felis, dapibus eu dolor vitae, dapibus maximus dolor. Nunc neque sapien, maximus ac massa eu, euismod pulvinar mi. Mauris ac commodo nisl. Sed non augue condimentum, volutpat turpis sed, sodales ex. Praesent non mi ut diam euismod dapibus. Donec lobortis eros eu pretium euismod. Cras nec lectus accumsan, tempus sapien sit amet, finibus velit. Curabitur in dui ac ligula fermentum iaculis. Nam a sem eu nisl consequat rhoncus vitae a lectus. Maecenas interdum diam ut massa fermentum, id cursus velit luctus.
+        <br><br>
+        Nunc dictum at nisl quis tincidunt. In pretium est vel velit convallis, eget viverra nisl pharetra. Integer sit amet sapien sit amet lacus elementum imperdiet eget et magna. Ut sagittis tellus purus, sed varius felis euismod in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum elementum, sem in malesuada hendrerit, velit mi auctor ante, sed vestibulum mi nibh a enim. Nulla sollicitudin imperdiet odio non aliquam. Cras nec magna sit amet elit convallis tempus. Pellentesque at luctus libero, dictum auctor est. Curabitur nec hendrerit elit. Phasellus dui risus, aliquam condimentum mattis sit amet, luctus posuere ante. Aenean nibh purus, laoreet a imperdiet at, blandit in purus. Proin lobortis est ac scelerisque fringilla. Proin mauris augue, consequat nec congue venenatis, tristique vitae dolor. Phasellus vulputate purus ut elit laoreet, nec finibus augue interdum.
+      </p>
+      <!-- Text Source is from Wikipedia -->
+      <p id="bottleVerse">99 bottles of beer on the wall, 99 bottles of beer.
+        Take one down and pass it around, 98 bottles of beer on the wall.
+        <br><br>
+        98 bottles of beer on the wall, 98 bottles of beer.
+        Take one down and pass it around, 97 bottles of beer on the wall.
+        <br><br>
+        97 bottles of beer on the wall, 97 bottles of beer.
+        Take one down and pass it around, 96 bottles of beer on the wall.
+        <br><br>
+        96 bottles of beer on the wall, 96 bottles of beer.
+        Take one down and pass it around, 95 bottles of beer on the wall.
+      </p>
+
+      <p id="thirdThing">this is the third thing</p>
+    </div>
+  </div>
+
+  <script>
+  var lorem=document.getElementById("loremText");
+  var beer=document.getElementById("bottleVerse");
+  var third=document.getElementById("thirdThing");
+  function loremText(){
+    lorem.style.display="block";
+    beer.style.display="none";
+    third.style.display="none";
+  }
+  function beerText(){
+    lorem.style.display="none";
+    beer.style.display="block";
+    third.style.display="none";
+  }
+  function lastThing(){
+    lorem.style.display="none";
+    beer.style.display="none";
+    third.style.display="block";
+  }
+  </script>
+</body>
+</html>

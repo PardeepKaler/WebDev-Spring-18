@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Task 1</title>
+  <style>
+  img{
+    width: 200px;
+    height: 200px;
+  }
+  div{
+    text-align: center;
+  }
+  table{
+    margin: 0px auto;
+    width: 30%;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 15px;
+  }
+</style>
+</head>
+<body>
+  <div>
+    <a href="https://www.w3schools.com/html/default.asp">LEARN HTML TUTORIAL</a><br><br>
+    <a href="https://www.w3schools.com/css/default.asp">LEARN CSS TUTORIAL</a><br><br>
+    <a href="https://en.wikipedia.org/wiki/Eagle">EAGLE</a><br><br>
+    <!-- Image Source is from Wikipedia -->
+    <img src="eagle.jpg" alt="EAGLE">
+    <h2>
+      <span style='color: blue'>E</span>
+      <span style='color: red'>A</span>
+      <span style='color: yellow'>G</span>
+      <span style='color: blue'>L</span>
+      <span style='color: green'>E</span>
+    </h2>
+    <table id="myTable">
+      <tr>
+        <th>x</th>
+        <th>2^x</th>
+      </tr>
+    </table>
+  </div>
+  <script>
+  var table = document.getElementById("myTable");
+
+  for(i=1;i<=8;i++){
+    var row = document.createElement("TR");
+    var cell1 = document.createElement("TD");
+    var cell2 = document.createElement("TD");
+    cell1.innerHTML = i;
+    cell2.innerHTML = Math.pow(2,i);
+    row.appendChild(cell1);
+    row.appendChild(cell2);
+    table.appendChild(row);
+  }
+</script>
+</body>
+</html>

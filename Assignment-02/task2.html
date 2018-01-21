@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Task 2</title>
+  <style>
+  div{
+    text-align: center;
+  }
+  </style>
+</head>
+  <body>
+    <div id="myDiv">
+    <h1 id="curValue">10</h1>
+    <button type="button"
+    onclick="myAlert()">ALERT</button>
+    <button type="button"
+    onclick="increment()">INCREMENT</button>
+    <button type="button"
+    onclick="newParagraph()">NEW PARAGRAPH</button>
+  </div>
+
+  <script>
+
+  function myAlert(){
+    var val=document.getElementById("curValue").textContent;
+    alert(val);
+  }
+
+  function increment(){
+      var heading=document.getElementById("curValue");
+      heading.textContent=Number(heading.textContent)+1;
+  }
+
+  function newParagraph(){
+    var newPara = document.createElement('p');
+    var div=document.getElementById("myDiv");
+    var val=document.getElementById("curValue").textContent;
+    newPara.textContent=val;
+    div.appendChild(newPara);
+  }
+  </script>
+  </body>
+  </html>
